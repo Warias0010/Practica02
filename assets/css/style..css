@@ -1,0 +1,369 @@
+*,::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --m-b:20px/*Este es el margin bottom*/
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3+p{
+    color:rgb(240, 151, 151);
+    text-align: center;
+}
+.contenedor{
+    padding:80px 0;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    height: 700px;
+    width: 100%;
+    position:relative;
+    background: #5D4157;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.menu-header{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-radius:100%;
+    width: 70px;
+    height: 70px;
+    display:flex;
+    justify-content: center;
+   align-items: center;
+   box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+   z-index: 10;
+   border-radius: 50%;
+}
+.menu-header img{
+    width: 60%;
+}
+.enlaces-header{
+    position: fixed;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    z-index: 5;
+    background: #5D4157;
+    background: #5D4157;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+display: flex;
+flex-direction: wrap;
+visibility: hidden;
+clip-path: circle(0% at 100% 0);
+}
+.click{
+    visibility: visible;
+    
+    clip-path: circle(150% at 100% 0);
+    transition: clip-path 2s;
+    transition: circle(150% at 100% 0);
+}
+.click1{
+    visibility: visible;
+    
+    clip-path: circle(0 at 100% 150%);
+    transition: clip-path 2s;
+    transition: circle(0 at 100% 150%);
+}
+.contenido-header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    color:#fff;
+    overflow: hidden;
+}
+.contenido-header .textos-header{
+    width: 50%;
+}
+.contenido-header .textos-header h1{
+    font-size: 3.5rem;
+}
+.contenido-header .textos-header p{
+    font-size: 1.5rem;
+}
+.contenido-header .textos-header a{
+    border: 1px solid #ffff;
+    padding: 15px;
+    display: inline-block;
+    width: 200px;
+    border-radius: 15%;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+.contenido-header .img-header{
+    width: 50%;
+}
+.contenido-header .img-header img{
+    width: 100%;
+}
+
+.vector{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.acerca-de{
+padding: 40px;
+}
+.contenedo-acerca-de{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedo-acerca-de .card-acerca{
+    width: 30%;
+    background-color: rgb(214, 132, 132);
+    color:#fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 20px 10px;
+}
+.contenedo-acerca-de .card-acerca i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.contenedo-acerca-de .card-acerca h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contenedo-acerca-de .card-acerca p{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.sevicios-cont{
+    background: #333;
+}
+.sevicios-cont .servicios{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+}
+.servicios-cont .servicios .img-servicios{
+width: 50%;
+}
+.servicios-cont .servicios .img-servicios img{
+width: 100%;
+}
+.servicios-cont .servicios .contenido-servicios{
+    width: 50%;
+}
+.servicios-cont .servicios .contenido-servicios h3{
+    text-align: center;
+}
+.servicios-cont .servicios .contenido-servicios p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.servicios-cont .servicios .contenido-servicios ul{
+    list-style: none; 
+    text-align: right;
+}
+.servicios-cont .servicios .contenido-servicios ul li{
+    padding: 10px;
+}
+.galeria-contenedor{
+    margin-top: 50px;
+}
+.galeria{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.galeria-img{
+    position: relative;
+    overflow: hidden;
+    width: 28%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0 , 0.5);
+}
+.galeria-img img{
+    width: 100%;
+    height: 250px;
+    vertical-align:top ;
+    object-fit: cover;
+    transform: scale(1);
+    transform: transform 3s;
+    
+}
+
+.galeria-img img{
+    transform: scale(1.3);
+}
+.galeria-img .extra-galeria{
+    position: absolute;
+    top: 0;
+    background: rgba(212, 158, 158,0.5);
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    transform: translate(100%,100%);
+    transition: transform 3s;
+}
+.galeria-img:hover .extra-galeria{
+    transform: translate(0);
+}
+/* desde aqui inicia el contenedor precio...*/
+.contenedo-precio{
+    background: rgb(238, 229, 229);
+    padding: 30px 0;  
+}
+.contenedo-precio .tabla-de-precios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedo-precio .tabla-de-precios .tabla{
+    width: 30%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contenedo-precio .tabla-de-precios .tabla h5{
+    font-size:1.5rem ;
+    text-align: center;
+    margin-bottom: var(--m-b);
+
+}
+.contenedo-precio .tabla-de-precios .tabla p{
+    font-size:1.9rem ;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: var(--m-b);
+}
+.contenedo-precio .tabla-de-precios .tabla ul{
+    list-style: none;
+}
+.contenedo-precio .tabla-de-precios .tabla ul li{
+    margin-bottom: var(--m-b);
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.contenedo-precio .tabla-de-precios .tabla  a{
+    display:inline-block;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 9px;
+    background: rgb(93, 70, 199);
+    color:#fff ;
+
+}
+.contenedor1{
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+.contenedor1 h3{
+    padding: 0px;
+   font-size: 25px;
+}
+.slider-contenedor{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.slider-test{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+ .imgcmtario{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+footer{
+    background: rgb(114, 111, 111);
+    padding: 100px 0;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-contenedor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .footer-contenedor .contacto{
+    width: 50%;
+}
+footer .footer-contenedor .contacto h3{
+    text-align: left;
+    font-size: 1.5rem;
+    
+}
+footer .footer-contenedor .contacto p{
+    text-align: left;
+    margin-bottom: var(--m-b);
+    color:#fff;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+footer .footer-contenedor .contacto i{
+    font-size: 30px;
+    background: #fff;
+    color:rgb(189, 97, 97);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , 0.5);
+    padding: 10px;
+    cursor:pointer;
+    margin: 0 15px 0 0;
+}
+
