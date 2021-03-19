@@ -1,14 +1,9 @@
-let menuclick= document.getElementById('menu-click')
-let enlaces= document.querySelector('.enlaces-header')
-console.log(enlaces)
+let click = document.getElementById('menu-click');
+let enlaces = document.querySelector('.enlaces-header');
 
-menuclick.addEventListener('click', ()=>{
-enlaces.classList.toggle('click');
-/*
-enlaces.style.ClipPath= 'circle(150% at 100% 0);';
-enlaces.style.transition= 'clip-path 2s'*/
+click.addEventListener('click', () => {
+    enlaces.classList.toggle('click');
 });
-
 
 
 let slider = document.querySelector('.slider-contenedor');
